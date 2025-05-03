@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Octant",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#f5f3f0",
     "light": "#07C983",
-    "dark": "#15803D"
+    "dark": "#0c0a09"
   },
   "favicon": "/favicon.ico",
   "navigation": {
