@@ -1,0 +1,22 @@
+---
+title: "How to Fix 'Exception Server Tick Loop' Error in Minecraft"
+sidebarTitle: "Exception server tick loop"
+description: "A .json file likely may have become corrupted. This guide shows you how to fix this common error server owners face for a Minecraft server"
+---
+
+You may have encountered this error message on your Minecraft server causing it to crash or prevent it from starting up. This typically means that one of your .json configuration files may have become corrupt.
+
+<Warning>The error: `java.lang.NullPointerException: Exception in server tick loop`</Warning>
+
+Head to the [Octant Panel](https://my.octant.sh) and let's get this fixed:
+
+1. Stop the server
+2. Head to the file manager
+2. Find and delete `whitelist.json`, `banned-player.json`, and `banned-ips.json`
+3. Start the server
+
+This will regenerate the files in a correct format for you. 
+
+Alternatively, you can [restore a backup](../../../panel/backups#mounting) of those files or you can also make sure it's correctly formatted with a [json validator & formatter tool](https://jsonlint.com/) ensuring they have the `[]` symbol at the beginning and end of the files.
+
+Still running into issues? Have a chat us in our [Discord community](https://octant.sh/compute), or contact us via [email](mailto:support@octant.sh) or livechat.
