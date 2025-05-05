@@ -1,8 +1,8 @@
 {
     "name": "Octant Documentation",
     "logo": {
-        "light": "/logo/light.png",
-        "dark": "/logo/dark.png"
+        "light": "/logo/dark.png",
+        "dark": "/logo/light.png"
     },
     "favicon": "/favicon.png",
     "colors": {
