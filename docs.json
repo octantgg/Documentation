@@ -1,6 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
   "name": "Octant Documentation",
   "colors": {
     "primary": "#DC3962",
