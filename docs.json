@@ -8,7 +8,7 @@
   "name": "Octant Documentation",
   "colors": {
     "primary": "#DC3962",
-    "light": "#FF81A0",
+    "light": "#2a2b2c",
     "dark": "#AE0C35"
   },
   "favicon": "/favicon.png",
@@ -23,8 +23,7 @@
             "pages": [
               "introduction",
               "quickstart",
-              "migration",
-              "changelog"
+              "migration"
             ]
           },
           {
