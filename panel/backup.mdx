@@ -1,0 +1,95 @@
+---
+title: "Backup"
+description: "A guide on how to back up your server's files"
+icon: "floppy-disk"
+---
+
+Backups are an essential tool for everyone, whether they are server developers or the average end-user. **Backups make life safe.**
+
+This is why we've developed a set of backup tools to make your life easy! In addition to taking your own backups, we take **daily off-site backups** on every server to ensure the most safe and available service for our users.
+
+To take things even further, we've added additional functionality to the normal backup experience, including:
+
+## Creating
+
+To create a 1:1 copy of your server to store safely, head to:
+
+`https://my.octant.sh/<server-id>/backups`  
+Replace `<server-id>` with your actual server ID.
+
+<Frame>
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
+</Frame>
+
+Below the description of the backup system, you can find the button named "**Create Backup**", which will open a modal with information you can fill out:
+
+<Frame>
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
+</Frame>
+
+- **Backup name**: Name it something memorable, or leave it empty to autofill with a timestamp.
+- **Ignored Files & Directories**: Enter paths relative to your main directory, e.g. `/plugins/Dynmap/*` to exclude all files in `Dynmap`.
+- **Locked**: Prevent accidental deletion. Toggle the lock by clicking the three dots on the backup.
+
+## Deleting
+
+Our plans come with a soft limit of 3 backup slots (increasable for free). If you're out of slots, delete a backup by pressing the three dots on the backup and selecting "**Delete**". A confirmation modal will appear.
+
+<Warning>
+These backups **CANNOT** be recovered, so delete at your own risk.
+</Warning>
+
+## Restoring
+
+Need to roll back after a misconfigured plugin or an unfortunate server event? Restoring is just two clicks away.
+
+Click the three dots on the backup you want to restore. A modal will ask if you'd like to delete all current files before restoring. This **CANNOT** be reversed.
+
+<Tip>Take a backup of the current state before restoring if you're unsure whether the backup will fix or break things.</Tip>
+
+<Frame>
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
+</Frame>
+
+## Mounting
+
+Sometimes you just need one file, not the whole server. That's where the **Backup Mounter** comes in—it lets you mount a backup _as a folder_ in your file manager.
+
+<Warning>
+During the mounted backup process, power controls and similar tasks may be temporarily unavailable.
+</Warning>
+
+<Frame>
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
+</Frame>
+
+To mount, click the three dots on the desired backup, and it will appear in your file manager.
+
+To unmount, press the icon on the mounted folder. Inside, you can:
+
+- **Restore**: Restore the file/folder to its original location.
+- **Move**: Restore it elsewhere using `../` to navigate out of the mounted folder.
+
+<Frame>
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
+</Frame>
+
+## Off-site backups
+
+We take redundant off-site backups **every 24 hours** with a **14-day retention**. To restore one, contact us via:
+
+- [Email](mailto:support@octant.sh)
+- [Discord](https://discord.gg/compute)
+- Live chat
+
+Provide:
+
+- Your server ID
+- Your email address
+- The date of the backup you want restored
+
+We'll take care of the rest.
+
+<Warning>
+We recommend taking another backup before we restore one for you, as rolling back restored backups is not possible.
+</Warning>

@@ -1,0 +1,123 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "appearance": {
+    "default": "light",
+    "strict": true
+  },
+  "name": "Octant Documentation",
+  "colors": {
+    "primary": "#2a2b2c",
+    "light": "#2a2b2c",
+    "dark": "#AE0C35"
+  },
+  "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "background": {
+    "color": {
+      "light": "#F5F3F0",
+      "dark": "#0A0A0A"
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Contact us",
+        "href": "mailto:support@octant.sh"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Deploy a server",
+      "href": "https://octant.sh"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://octant.sh",
+      "github": "https://github.com/octantsh",
+      "discord": "https://discord.gg/compute"
+    }
+  },
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "migration"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/server-pending",
+              "help/upgrade-plan",
+              "help/cancel-plan"
+            ]
+          },
+          {
+            "group": "Panel",
+            "pages": [
+              "panel/overview",
+              "panel/backup",
+              "panel/server-slices",
+              "panel/importing-files",
+              "panel/recycle-bin",
+              "panel/sub-users"
+            ]
+          }
+        ]
+      },
+      {
+        "anchor": "Minecraft",
+        "icon": "cubes",
+        "groups": [
+          {
+            "group": "Minecraft",
+            "pages": [
+              "games/minecraft/introduction",
+              {
+                "group": "Plugins",
+                "pages": [
+                  "games/minecraft/plugins/chunky",
+                  "games/minecraft/plugins/dynmap",
+                  "games/minecraft/plugins/geyser",
+                  "games/minecraft/plugins/votifier"
+                ]
+              },
+              {
+                "group": "Common errors",
+                "pages": [
+                  "games/minecraft/common-errors/connection-timed-out",
+                  "games/minecraft/common-errors/exception-server-tick-loop",
+                  "games/minecraft/common-errors/failed-to-check-session-lock",
+                  "games/minecraft/common-errors/kicked-for-flying"
+                ]
+              },
+              "games/minecraft/updating-jars",
+              "games/minecraft/server-icon",
+              "games/minecraft/installing-mods",
+              "games/minecraft/changing-versions",
+              "games/minecraft/join-server",
+              "games/minecraft/setting-up-rcon",
+              "games/minecraft/convert-world",
+              "games/minecraft/convert-bedrock-to-java",
+              "games/minecraft/upload-world",
+              "games/minecraft/resource-packs",
+              "games/minecraft/aikars-flags"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
