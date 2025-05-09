@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "appearance": {
     "default": "light",
     "strict": true
@@ -9,7 +9,7 @@
   "colors": {
     "primary": "#2a2b2c",
     "light": "#2a2b2c",
-    "dark": "#AE0C35"
+    "dark": "#2a2b2c"
   },
   "favicon": "/favicon.png",
   "logo": {
