@@ -12,6 +12,36 @@
     "dark": "#AE0C35"
   },
   "favicon": "/favicon.png",
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "background": {
+    "color": {
+      "light": "#F5F3F0",
+      "dark": "#0A0A0A"
+    }
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Contact us",
+        "href": "mailto:support@octant.sh"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Deploy a server",
+      "href": "https://octant.sh"
+    }
+  },
+  "footer": {
+    "socials": {
+      "website": "https://octant.sh",
+      "github": "https://github.com/octantsh",
+      "discord": "https://discord.gg/compute"
+    }
+  },
   "navigation": {
     "anchors": [
       {
@@ -44,8 +74,8 @@
               "panel/recycle-bin",
               "panel/sub-users"
             ]
-          },
-            ]
+          }
+        ]
       },
       {
         "anchor": "Minecraft",
@@ -89,35 +119,5 @@
         ]
       }
     ]
-  },
-  "logo": {
-    "light": "/logo/light.png",
-    "dark": "/logo/dark.png"
-  },
-  "background": {
-    "color": {
-      "light": "#F5F3F0",
-      "dark": "#0A0A0A"
-    }
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Contact us",
-        "href": "mailto:support@octant.sh"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Deploy a server",
-      "href": "https://octant.sh"
-    }
-  },
-  "footer": {
-    "socials": {
-      "website": "https://octant.sh",
-      "github": "https://github.com/octantsh",
-      "discord": "https://discord.gg/compute"
-    }
   }
 }
