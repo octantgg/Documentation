@@ -16,7 +16,7 @@
     },
     "topbarCtaButton": {
         "name": "Deploy a server",
-        "url": "https://octant.sh"
+        "url": "https://octant.gg"
     },
     "feedback": {
         "thumbsRating": true,
@@ -26,7 +26,7 @@
     "topbarLinks": [
         {
             "name": "Contact us",
-            "url": "mailto:support@octant.sh"
+            "url": "mailto:support@octant.gg"
         }
     ],
     "anchors": [
@@ -94,8 +94,8 @@
         }
     ],
     "footerSocials": {
-        "website": "https://octant.sh",
-        "github": "https://github.com/octantsh",
+        "website": "https://octant.gg",
+        "github": "https://github.com/octantgg",
         "discord": "https://discord.gg/compute"
     }
 }
