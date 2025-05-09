@@ -35,23 +35,17 @@
             ]
           },
           {
-            "group": "Panel & Billing",
+            "group": "Panel",
             "pages": [
               "panel/overview",
-              "panel/backups",
+              "panel/backup",
               "panel/server-slices",
               "panel/importing-files",
               "panel/recycle-bin",
               "panel/sub-users"
             ]
           },
-          {
-            "group": "Minecraft",
-            "pages": [
-              "games/minecraft-installing-modpacks"
             ]
-          }
-        ]
       },
       {
         "anchor": "Minecraft",
