@@ -26,19 +26,19 @@
     "links": [
       {
         "label": "Contact us",
-        "href": "mailto:support@octant.sh"
+        "href": "mailto:support@octant.gg"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Deploy a server",
-      "href": "https://octant.sh"
+      "href": "https://octant.gg"
     }
   },
   "footer": {
     "socials": {
-      "website": "https://octant.sh",
-      "github": "https://github.com/octantsh",
+      "website": "https://octant.gg",
+      "github": "https://github.com/octantgg",
       "discord": "https://discord.gg/compute"
     }
   },
