@@ -12,80 +12,84 @@ To take things even further, we've added additional functionality to the normal 
 
 ## Creating
 
-To create a 1:1 copy of your server to store safely, head to https://my.octant.sh/`server-id`/backups, replacing the `server-id` value with your own.
+To create a 1:1 copy of your server to store safely, head to:
+
+`https://my.octant.sh/<server-id>/backups`  
+Replace `<server-id>` with your actual server ID.
 
 <Frame>
-    <img src="https://i.imgur.com/hpeikxd.jpeg" />
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
 </Frame>
 
 Below the description of the backup system, you can find the button named "**Create Backup**", which will open a modal with information you can fill out:
 
 <Frame>
-    <img src="https://i.imgur.com/hpeikxd.jpeg" />
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
 </Frame>
 
-- `Backup name`: Name it something memorable, or alternatively you can leave this empty which will be autofilled with a timestamp.
-- `Ignored Files & Directories`: If there are any files or folders you would like to not take a backup of, list them here. You will need to enter the path of the directory/file relative to the main directory, e.g. `/plugins/Dynmap/*`. This ignores all files inside the `Dynmap` directory.
-- `Locked`: Set a lock on the backup to prevent accidential deletions. You can toggle this by clicking the three dots on the specified backup to remove or enable the lock.
+- **Backup name**: Name it something memorable, or leave it empty to autofill with a timestamp.
+- **Ignored Files & Directories**: Enter paths relative to your main directory, e.g. `/plugins/Dynmap/*` to exclude all files in `Dynmap`.
+- **Locked**: Prevent accidental deletion. Toggle the lock by clicking the three dots on the backup.
 
 ## Deleting
 
-Our plans comes with a soft-limit of 3 backup slots (increasable for free). If you are out of slots, you can delete a backup to create space for a new one. This can be done by pressing the three dots on the specified backup and pressing "**Delete**". A confirmation modal will pop up which you can confirm or deny the deletion process.
+Our plans come with a soft limit of 3 backup slots (increasable for free). If you're out of slots, delete a backup by pressing the three dots on the backup and selecting "**Delete**". A confirmation modal will appear.
 
-<Warning>These backups **CANNOT** be recovered, so delete at your own risk.</Warning>
+<Warning>
+These backups **CANNOT** be recovered, so delete at your own risk.
+</Warning>
 
 ## Restoring
 
-Now that you've created some backups, and you have a situation where you need to restore it. A bad plugin confiruation, or someone raided and nuked your SMP (we've all been there).
+Need to roll back after a misconfigured plugin or an unfortunate server event? Restoring is just two clicks away.
 
-Restoring backups is as easy as pressing two buttons! You can press the three dots on the backup you would like to restore, and a modal will pop up asking you whether you would like to delete all files before restoring the backup. If selected, this **CANNOT** be reversed, so restore at your own risk. An advice would be to take a backup of the server before restoring it if you are unsure whether it may fix or break it.
+Click the three dots on the backup you want to restore. A modal will ask if you'd like to delete all current files before restoring. This **CANNOT** be reversed.
+
+<Tip>Take a backup of the current state before restoring if you're unsure whether the backup will fix or break things.</Tip>
 
 <Frame>
-    <img src="https://i.imgur.com/hpeikxd.jpeg" />
-</frame>
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
+</Frame>
 
 ## Mounting
 
-Sometimes, you may not want to restore the whole 1:1 copy of the server you created as that would overwrite the whole server. You may only want to restore specific files, like a config.yml from a plugin you accidentally misconfigured, or deleted the `server.properties` file by accident and want to restore that without losing all of your progress.
-
-All these reasons inspired us to create a **Backup Mounter**. This feature allows you to **mount** a backup _as a folder_ to your file manager, where you can restore specific files or folders!
+Sometimes you just need one file, not the whole server. That's where the **Backup Mounter** comes in—it lets you mount a backup _as a folder_ in your file manager.
 
 <Warning>
-    During the process of a mounted backup, you may not be able to run poewr controls or do similar tasks until it is unmounted.
+During the mounted backup process, power controls and similar tasks may be temporarily unavailable.
 </Warning>
 
 <Frame>
-    <img src="https://i.imgur.com/hpeikxd.jpeg" />
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
 </Frame>
 
-To mount a backup, press the three dots on the backup you would like to mount, and it will mount the backup in your file manager.
+To mount, click the three dots on the desired backup, and it will appear in your file manager.
+
+To unmount, press the icon on the mounted folder. Inside, you can:
+
+- **Restore**: Restore the file/folder to its original location.
+- **Move**: Restore it elsewhere using `../` to navigate out of the mounted folder.
 
 <Frame>
-    <img src="https://i.imgur.com/hpeikxd.jpeg" />
+  <img src="https://i.imgur.com/hpeikxd.jpeg" />
 </Frame>
-
-To unmount the backup, press the icon on the mounted backup folder inside the
-file manager, and it will unmount the backup for you. Now, you can simply go
-into the folder, select the specific files you want to restore and either press
-"**Restore**" which restores the file/folder back to its relative directory in the
-server, or "**Move**" which allows you to restore the file/folder to a different
-directory - use the `../` path before the file/folder, in the popup modal,
-you're wanting to restore to, to move out of the mounted backup folder and
-restore to a custom path.
 
 ## Off-site backups
 
-As well as you taking your own backups, we take redundant backups to our
-off-site servers **every 24 hours** with a retention of 14 days. To restore a backup, 
-contact us via [email](mailto:support@octant.sh), [Discord](https://discord.gg/compute), or livechat and provide:
+We take redundant off-site backups **every 24 hours** with a **14-day retention**. To restore one, contact us via:
+
+- [Email](mailto:support@octant.sh)
+- [Discord](https://discord.gg/compute)
+- Live chat
+
+Provide:
 
 - Your server ID
-- Email address
+- Your email address
 - The date of the backup you want restored
 
-Once we have this information, we'll restore the backup for you.
+We'll take care of the rest.
 
 <Warning>
-  We recommend taking another backup before we restore the backup for you, as
-  rolling back restored backups is not possible.
+We recommend taking another backup before we restore one for you, as rolling back restored backups is not possible.
 </Warning>
